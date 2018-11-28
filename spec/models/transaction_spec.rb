@@ -8,6 +8,6 @@ RSpec.describe Transaction, type: :model do
   end
 
   describe 'Relationship' do
-    it { should belong_to(:invoices)}
+    it { should belong_to(:invoice)}
   end
 end
