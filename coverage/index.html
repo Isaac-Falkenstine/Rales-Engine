@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-11-30T09:27:07-07:00">2018-11-30T09:27:07-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-11-30T09:51:24-07:00">2018-11-30T09:51:24-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">94.27%</span></span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.09
+         1.15
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>43</b> files in total.
-    <b>576</b> relevant lines. 
-    <span class="green"><b>543</b> lines covered</span> and
-    <span class="red"><b>33</b> lines missed </span>
+    <b>46</b> files in total.
+    <b>590</b> relevant lines. 
+    <span class="green"><b>590</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -61,13 +61,33 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#39738cf55785e8f720e0efa0510fa9a989061803" class="src_link" title="app/controllers/api/v1/invoice_items/random_controller.rb">app/controllers/api/v1/invoice_items/random_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#dc7bcea9ca15a2941baa06eedba03d57ef8a3451" class="src_link" title="app/controllers/api/v1/invoice_items/search_controller.rb">app/controllers/api/v1/invoice_items/search_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>15</td>
+        <td>8</td>
+        <td>8</td>
+        <td>0</td>
+        <td>2.6</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#3c0b316f40ff7bf203c9309eac85e0bf23fe42c9" class="src_link" title="app/controllers/api/v1/invoice_items_controller.rb">app/controllers/api/v1/invoice_items_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>9</td>
         <td>5</td>
         <td>5</td>
         <td>0</td>
-        <td>2.4</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -271,6 +291,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#854c2d97533ae94c8d51ea6fe5446d0530f904f1" class="src_link" title="app/serializers/invoice_item_serializer.rb">app/serializers/invoice_item_serializer.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#6de0bfa78162980c5914348b3d0c9eb51f945975" class="src_link" title="app/serializers/invoice_serializer.rb">app/serializers/invoice_serializer.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>4</td>
@@ -432,12 +462,12 @@
       
       <tr>
         <td class="strong"><a href="#770ba1a12706a2805c9def596ad247f92cb1b606" class="src_link" title="spec/requests/api/v1/invoice_items_request_spec.rb">spec/requests/api/v1/invoice_items_request_spec.rb</a></td>
-        <td class="red strong">56.0 %</td>
+        <td class="green strong">100.0 %</td>
         <td>121</td>
         <td>75</td>
-        <td>42</td>
-        <td>33</td>
-        <td>0.6</td>
+        <td>75</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -569,6 +599,164 @@
 </div>
 
       
+        <div class="source_table" id="39738cf55785e8f720e0efa0510fa9a989061803">
+  <div class="header">
+    <h3>app/controllers/api/v1/invoice_items/random_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Api::V1::InvoiceItems::RandomController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    render json: InvoiceItemSerializer.new(InvoiceItem.find(InvoiceItem.all.sample.id))</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="dc7bcea9ca15a2941baa06eedba03d57ef8a3451">
+  <div class="header">
+    <h3>app/controllers/api/v1/invoice_items/search_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>8</b> relevant lines. 
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Api::V1::InvoiceItems::SearchController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="3">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    render json: InvoiceItemSerializer.new(InvoiceItem.find_by(invoice_item_params))</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="7">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    render json: InvoiceItemSerializer.new(InvoiceItem.where(invoice_item_params))</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def invoice_item_params</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="13">
+          <span class="hits">8</span>
+          
+          <code class="ruby">    params.permit(:id, :quantity, :unit_price, :created_at, :updated_at)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="3c0b316f40ff7bf203c9309eac85e0bf23fe42c9">
   <div class="header">
     <h3>app/controllers/api/v1/invoice_items_controller.rb</h3>
@@ -619,8 +807,8 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="7">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
           
           <code class="ruby">    render json: InvoiceItem.find(params[:id])</code>
         </li>
@@ -1982,6 +2170,49 @@
 </div>
 
       
+        <div class="source_table" id="854c2d97533ae94c8d51ea6fe5446d0530f904f1">
+  <div class="header">
+    <h3>app/serializers/invoice_item_serializer.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class InvoiceItemSerializer</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  include FastJsonapi::ObjectSerializer</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  attributes :id, :quantity, :unit_price</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="6de0bfa78162980c5914348b3d0c9eb51f945975">
   <div class="header">
     <h3>app/serializers/invoice_serializer.rb</h3>
@@ -3195,11 +3426,11 @@
         <div class="source_table" id="770ba1a12706a2805c9def596ad247f92cb1b606">
   <div class="header">
     <h3>spec/requests/api/v1/invoice_items_request_spec.rb</h3>
-    <h4><span class="red">56.0 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>75</b> relevant lines. 
-      <span class="green"><b>42</b> lines covered</span> and
-      <span class="red"><b>33</b> lines missed.</span>
+      <span class="green"><b>75</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -3386,8 +3617,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="31">
-          
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
           
           <code class="ruby">   invoice_item = JSON.parse(response.body)</code>
         </li>
@@ -3398,14 +3629,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="33">
-          
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(response).to be_successful</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="34">
-          
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(invoice_item[&quot;data&quot;][&quot;attributes&quot;][&quot;id&quot;]).to eq(id)</code>
         </li>
@@ -3425,13 +3656,13 @@
         <li class="covered" data-hits="1" data-linenumber="37">
           <span class="hits">1</span>
           
-          <code class="ruby"> it &#39;can find a invoice_item by status&#39; do</code>
+          <code class="ruby"> it &#39;can find a invoice_item by quantity&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="38">
           <span class="hits">1</span>
           
-          <code class="ruby">   status = create(:invoice_item).status</code>
+          <code class="ruby">   quantity = create(:invoice_item).quantity</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="39">
@@ -3440,10 +3671,10 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="40">
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">   get &quot;/api/v1/invoice_items/find?status=#{status}&quot;</code>
+          <code class="ruby">   get &quot;/api/v1/invoice_items/find?quantity=#{quantity}&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="41">
@@ -3452,8 +3683,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="42">
-          
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
           
           <code class="ruby">   invoice_item = JSON.parse(response.body)</code>
         </li>
@@ -3464,16 +3695,16 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="44">
-          
+        <li class="covered" data-hits="1" data-linenumber="44">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(response).to be_successful</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="45">
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">   expect(invoice_item[&quot;data&quot;][&quot;attributes&quot;][&quot;status&quot;]).to eq(status)</code>
+          <code class="ruby">   expect(invoice_item[&quot;data&quot;][&quot;attributes&quot;][&quot;quantity&quot;]).to eq(quantity)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="46">
@@ -3512,20 +3743,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="52">
-          
+        <li class="covered" data-hits="1" data-linenumber="52">
+          <span class="hits">1</span>
           
           <code class="ruby">   invoice_item_data = JSON.parse(response.body)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="53">
-          
+        <li class="covered" data-hits="1" data-linenumber="53">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(response).to be_successful</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="54">
-          
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(invoice_item_data[&quot;data&quot;][&quot;attributes&quot;][&quot;id&quot;]).to eq(invoice_item.id)</code>
         </li>
@@ -3566,20 +3797,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="61">
-          
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
           
           <code class="ruby">   invoice_item_data = JSON.parse(response.body)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="62">
-          
+        <li class="covered" data-hits="1" data-linenumber="62">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(response).to be_successful</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="63">
-          
+        <li class="covered" data-hits="1" data-linenumber="63">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(invoice_item_data[&quot;data&quot;][&quot;attributes&quot;][&quot;id&quot;]).to eq(invoice_item.id)</code>
         </li>
@@ -3626,26 +3857,26 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="71">
-          
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
           
           <code class="ruby">   invoice_items = JSON.parse(response.body)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="72">
-          
+        <li class="covered" data-hits="1" data-linenumber="72">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(response).to be_successful</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="73">
-          
+        <li class="covered" data-hits="1" data-linenumber="73">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(invoice_items[&quot;data&quot;].count).to eq(1)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="74">
-          
+        <li class="covered" data-hits="1" data-linenumber="74">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(invoice_items[&quot;data&quot;][0][&quot;attributes&quot;][&quot;id&quot;]).to eq(invoice_item_1.id)</code>
         </li>
@@ -3665,7 +3896,7 @@
         <li class="covered" data-hits="1" data-linenumber="77">
           <span class="hits">1</span>
           
-          <code class="ruby"> it &#39;can find all invoice_items by status&#39; do</code>
+          <code class="ruby"> it &#39;can find all invoice_items by quantity&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="78">
@@ -3677,7 +3908,7 @@
         <li class="covered" data-hits="1" data-linenumber="79">
           <span class="hits">1</span>
           
-          <code class="ruby">   invoice_item_3 = create(:invoice_item, status: &quot;Big bim&quot;)</code>
+          <code class="ruby">   invoice_item_3 = create(:invoice_item, quantity: &quot;Big bim&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="80">
@@ -3686,10 +3917,10 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="81">
+        <li class="covered" data-hits="1" data-linenumber="81">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">   get &quot;/api/v1/invoice_items/find_all?status=#{invoice_item_1.status}&quot;</code>
+          <code class="ruby">   get &quot;/api/v1/invoice_items/find_all?quantity=#{invoice_item_1.quantity}&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="82">
@@ -3698,26 +3929,26 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="83">
-          
+        <li class="covered" data-hits="1" data-linenumber="83">
+          <span class="hits">1</span>
           
           <code class="ruby">   invoice_items = JSON.parse(response.body)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="84">
-          
+        <li class="covered" data-hits="1" data-linenumber="84">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(response).to be_successful</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="85">
-          
+        <li class="covered" data-hits="1" data-linenumber="85">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(invoice_items[&quot;data&quot;].count).to eq(2)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="86">
-          
+        <li class="covered" data-hits="1" data-linenumber="86">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(invoice_items[&quot;data&quot;][0][&quot;attributes&quot;][&quot;id&quot;]).to eq(invoice_item_1.id)</code>
         </li>
@@ -3770,26 +4001,26 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="95">
-          
+        <li class="covered" data-hits="1" data-linenumber="95">
+          <span class="hits">1</span>
           
           <code class="ruby">   invoice_items = JSON.parse(response.body)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="96">
-          
+        <li class="covered" data-hits="1" data-linenumber="96">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(response).to be_successful</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="97">
-          
+        <li class="covered" data-hits="1" data-linenumber="97">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(invoice_items[&quot;data&quot;].count).to eq(2)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="98">
-          
+        <li class="covered" data-hits="1" data-linenumber="98">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(invoice_items[&quot;data&quot;][0][&quot;attributes&quot;][&quot;id&quot;]).to eq(invoice_item_1.id)</code>
         </li>
@@ -3842,26 +4073,26 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="107">
-          
+        <li class="covered" data-hits="1" data-linenumber="107">
+          <span class="hits">1</span>
           
           <code class="ruby">   invoice_items = JSON.parse(response.body)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="108">
-          
+        <li class="covered" data-hits="1" data-linenumber="108">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(response).to be_successful</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="109">
-          
+        <li class="covered" data-hits="1" data-linenumber="109">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(invoice_items[&quot;data&quot;].count).to eq(2)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="110">
-          
+        <li class="covered" data-hits="1" data-linenumber="110">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(invoice_items[&quot;data&quot;][0][&quot;attributes&quot;][&quot;id&quot;]).to eq(invoice_item_1.id)</code>
         </li>
@@ -3902,20 +4133,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="117">
-          
+        <li class="covered" data-hits="1" data-linenumber="117">
+          <span class="hits">1</span>
           
           <code class="ruby">   invoice_item = JSON.parse(response.body)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="118">
-          
+        <li class="covered" data-hits="1" data-linenumber="118">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(response).to be_successful</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="119">
-          
+        <li class="covered" data-hits="1" data-linenumber="119">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(invoice_item.count).to eq(1)</code>
         </li>

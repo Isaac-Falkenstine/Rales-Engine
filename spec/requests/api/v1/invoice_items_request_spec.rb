@@ -34,15 +34,15 @@ describe "Invoice items API" do
    expect(invoice_item["data"]["attributes"]["id"]).to eq(id)
  end
 
- it 'can find a invoice_item by status' do
-   status = create(:invoice_item).status
+ it 'can find a invoice_item by quantity' do
+   quantity = create(:invoice_item).quantity
 
-   get "/api/v1/invoice_items/find?status=#{status}"
+   get "/api/v1/invoice_items/find?quantity=#{quantity}"
 
    invoice_item = JSON.parse(response.body)
 
    expect(response).to be_successful
-   expect(invoice_item["data"]["attributes"]["status"]).to eq(status)
+   expect(invoice_item["data"]["attributes"]["quantity"]).to eq(quantity)
  end
 
  it 'can find a invoice_item by created_at' do
@@ -74,11 +74,11 @@ describe "Invoice items API" do
    expect(invoice_items["data"][0]["attributes"]["id"]).to eq(invoice_item_1.id)
  end
 
- it 'can find all invoice_items by status' do
+ it 'can find all invoice_items by quantity' do
    invoice_item_1, invoice_item_2 = create_list(:invoice_item, 2)
-   invoice_item_3 = create(:invoice_item, status: "Big bim")
+   invoice_item_3 = create(:invoice_item, quantity: "Big bim")
 
-   get "/api/v1/invoice_items/find_all?status=#{invoice_item_1.status}"
+   get "/api/v1/invoice_items/find_all?quantity=#{invoice_item_1.quantity}"
 
    invoice_items = JSON.parse(response.body)
    expect(response).to be_successful
