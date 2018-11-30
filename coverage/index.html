@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-11-30T08:53:26-07:00">2018-11-30T08:53:26-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-11-30T08:56:03-07:00">2018-11-30T08:56:03-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -31,9 +31,9 @@
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>33</b> files in total.
-    <b>281</b> relevant lines. 
-    <span class="green"><b>281</b> lines covered</span> and
+    <b>34</b> files in total.
+    <b>290</b> relevant lines. 
+    <span class="green"><b>290</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -86,6 +86,16 @@
         <td>9</td>
         <td>5</td>
         <td>5</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#33b10b3c40cdde8fcdf4d31d96b490615e23e219" class="src_link" title="app/controllers/api/v1/merchants/random_controller.rb">app/controllers/api/v1/merchants/random_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -363,9 +373,9 @@
       <tr>
         <td class="strong"><a href="#00bbd48193b1dc02465c76b1de3c20fa701784a7" class="src_link" title="spec/requests/api/v1/merchants_request_spec.rb">spec/requests/api/v1/merchants_request_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>112</td>
-        <td>69</td>
-        <td>69</td>
+        <td>121</td>
+        <td>75</td>
+        <td>75</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -678,6 +688,55 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="33b10b3c40cdde8fcdf4d31d96b490615e23e219">
+  <div class="header">
+    <h3>app/controllers/api/v1/merchants/random_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Api::V1::Merchants::RandomController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    render json: MerchantSerializer.new(Merchant.find(Merchant.all.sample.id))</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">end</code>
@@ -2970,8 +3029,8 @@
     <h3>spec/requests/api/v1/merchants_request_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>69</b> relevant lines. 
-      <span class="green"><b>69</b> lines covered</span> and
+      <b>75</b> relevant lines. 
+      <span class="green"><b>75</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -3645,7 +3704,61 @@
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="112">
+        <li class="covered" data-hits="1" data-linenumber="112">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;can find a random merchant&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="113">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    merchant_1, merchant_2, merchant_3 = create_list(:merchant, 3)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="114">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="115">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    get &quot;/api/v1/merchants/random&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="116">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="117">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    merchant = JSON.parse(response.body)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="118">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(response).to be_successful</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="119">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(merchant.count).to eq(1)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="120">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="121">
           
           
           <code class="ruby">end</code>
