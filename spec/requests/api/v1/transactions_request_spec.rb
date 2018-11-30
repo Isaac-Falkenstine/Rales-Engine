@@ -74,7 +74,7 @@ describe "Transactions API" do
    expect(transactions["data"][0]["attributes"]["id"]).to eq(transaction_1.id)
  end
 
- xit 'can find all transactions by result' do
+ it 'can find all transactions by result' do
    transaction_1, transaction_2 = create_list(:transaction, 2)
    transaction_3 = create(:transaction, result: "Failed")
 
