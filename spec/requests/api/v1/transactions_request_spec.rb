@@ -34,15 +34,15 @@ describe "Transactions API" do
    expect(transaction["data"]["attributes"]["id"]).to eq(id)
  end
 
- it 'can find a transaction by name' do
-   name = create(:transaction).name
+ it 'can find a transaction by result' do
+   result = create(:transaction).result
 
-   get "/api/v1/transactions/find?name=#{name}"
+   get "/api/v1/transactions/find?result=#{result}"
 
    transaction = JSON.parse(response.body)
 
    expect(response).to be_successful
-   expect(transaction["data"]["attributes"]["name"]).to eq(name)
+   expect(transaction["data"]["attributes"]["result"]).to eq(result)
  end
 
  it 'can find a transaction by created_at' do
@@ -74,11 +74,11 @@ describe "Transactions API" do
    expect(transactions["data"][0]["attributes"]["id"]).to eq(transaction_1.id)
  end
 
- it 'can find all transactions by name' do
-   transaction_1, transaction_2 = create_list(:transaction, 2, name: "Bob")
-   transaction_3 = create(:transaction, name: "Jim")
+ xit 'can find all transactions by result' do
+   transaction_1, transaction_2 = create_list(:transaction, 2)
+   transaction_3 = create(:transaction, result: "Failed")
 
-   get "/api/v1/transactions/find_all?name=#{transaction_1.name}"
+   get "/api/v1/transactions/find_all?result=#{transaction_1.result}"
 
    transactions = JSON.parse(response.body)
    expect(response).to be_successful

@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-11-30T09:00:04-07:00">2018-11-30T09:00:04-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-11-30T09:07:40-07:00">2018-11-30T09:07:40-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">90.33%</span></span>
+    (<span class="covered_percent"><span class="green">98.08%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.0
+         1.1
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>36</b> files in total.
-    <b>362</b> relevant lines. 
-    <span class="green"><b>327</b> lines covered</span> and
-    <span class="red"><b>35</b> lines missed </span>
+    <b>37</b> files in total.
+    <b>365</b> relevant lines. 
+    <span class="green"><b>358</b> lines covered</span> and
+    <span class="red"><b>7</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -132,12 +132,12 @@
       
       <tr>
         <td class="strong"><a href="#93a639af4d1b29eb1e350505557650249da92a41" class="src_link" title="app/controllers/api/v1/transactions/search_controller.rb">app/controllers/api/v1/transactions/search_controller.rb</a></td>
-        <td class="yellow strong">87.5 %</td>
+        <td class="green strong">100.0 %</td>
         <td>15</td>
         <td>8</td>
-        <td>7</td>
-        <td>1</td>
-        <td>1.4</td>
+        <td>8</td>
+        <td>0</td>
+        <td>2.4</td>
       </tr>
       
       <tr>
@@ -232,6 +232,16 @@
       
       <tr>
         <td class="strong"><a href="#55d1e61854022afa854ccb851d37878f011d9fe0" class="src_link" title="app/serializers/merchant_serializer.rb">app/serializers/merchant_serializer.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>4</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#04fa895c0fab8f990bafaa6c2c901c883e4a18fb" class="src_link" title="app/serializers/transaction_serializer.rb">app/serializers/transaction_serializer.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>4</td>
         <td>3</td>
@@ -402,12 +412,12 @@
       
       <tr>
         <td class="strong"><a href="#23b91bcf3869d66fc3cc3fcf7a3dc05932f6905c" class="src_link" title="spec/requests/api/v1/transactions_request_spec.rb">spec/requests/api/v1/transactions_request_spec.rb</a></td>
-        <td class="red strong">54.67 %</td>
+        <td class="green strong">90.67 %</td>
         <td>121</td>
         <td>75</td>
-        <td>41</td>
-        <td>34</td>
-        <td>0.5</td>
+        <td>68</td>
+        <td>7</td>
+        <td>0.9</td>
       </tr>
       
     </tbody>
@@ -1001,11 +1011,11 @@
         <div class="source_table" id="93a639af4d1b29eb1e350505557650249da92a41">
   <div class="header">
     <h3>app/controllers/api/v1/transactions/search_controller.rb</h3>
-    <h4><span class="yellow">87.5 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>8</b> relevant lines. 
-      <span class="green"><b>7</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -1024,8 +1034,8 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="3">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="3">
+          <span class="hits">4</span>
           
           <code class="ruby">    render json: TransactionSerializer.new(Transaction.find_by(transaction_params))</code>
         </li>
@@ -1084,8 +1094,8 @@
           <code class="ruby">  def transaction_params</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="13">
-          
+        <li class="covered" data-hits="7" data-linenumber="13">
+          <span class="hits">7</span>
           
           <code class="ruby">    params.permit(:name, :id, :created_at, :updated_at)</code>
         </li>
@@ -1626,6 +1636,49 @@
           <span class="hits">1</span>
           
           <code class="ruby">  attributes :id, :name</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="04fa895c0fab8f990bafaa6c2c901c883e4a18fb">
+  <div class="header">
+    <h3>app/serializers/transaction_serializer.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class TransactionSerializer</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  include FastJsonapi::ObjectSerializer</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  attributes :id, :credit_card_number, :result</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="4">
@@ -3950,11 +4003,11 @@
         <div class="source_table" id="23b91bcf3869d66fc3cc3fcf7a3dc05932f6905c">
   <div class="header">
     <h3>spec/requests/api/v1/transactions_request_spec.rb</h3>
-    <h4><span class="red">54.67 %</span> covered</h4>
+    <h4><span class="green">90.67 %</span> covered</h4>
     <div>
       <b>75</b> relevant lines. 
-      <span class="green"><b>41</b> lines covered</span> and
-      <span class="red"><b>34</b> lines missed.</span>
+      <span class="green"><b>68</b> lines covered</span> and
+      <span class="red"><b>7</b> lines missed.</span>
     </div>
   </div>
   
@@ -4141,8 +4194,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="31">
-          
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
           
           <code class="ruby">   transaction = JSON.parse(response.body)</code>
         </li>
@@ -4153,14 +4206,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="33">
-          
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(response).to be_successful</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="34">
-          
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(transaction[&quot;data&quot;][&quot;attributes&quot;][&quot;id&quot;]).to eq(id)</code>
         </li>
@@ -4180,13 +4233,13 @@
         <li class="covered" data-hits="1" data-linenumber="37">
           <span class="hits">1</span>
           
-          <code class="ruby"> it &#39;can find a transaction by name&#39; do</code>
+          <code class="ruby"> it &#39;can find a transaction by result&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="38">
           <span class="hits">1</span>
           
-          <code class="ruby">   name = create(:transaction).name</code>
+          <code class="ruby">   result = create(:transaction).result</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="39">
@@ -4195,10 +4248,10 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="40">
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">   get &quot;/api/v1/transactions/find?name=#{name}&quot;</code>
+          <code class="ruby">   get &quot;/api/v1/transactions/find?result=#{result}&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="41">
@@ -4207,8 +4260,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="42">
-          
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
           
           <code class="ruby">   transaction = JSON.parse(response.body)</code>
         </li>
@@ -4219,16 +4272,16 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="44">
-          
+        <li class="covered" data-hits="1" data-linenumber="44">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(response).to be_successful</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="45">
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">   expect(transaction[&quot;data&quot;][&quot;attributes&quot;][&quot;name&quot;]).to eq(name)</code>
+          <code class="ruby">   expect(transaction[&quot;data&quot;][&quot;attributes&quot;][&quot;result&quot;]).to eq(result)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="46">
@@ -4267,20 +4320,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="52">
-          
+        <li class="covered" data-hits="1" data-linenumber="52">
+          <span class="hits">1</span>
           
           <code class="ruby">   transaction_data = JSON.parse(response.body)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="53">
-          
+        <li class="covered" data-hits="1" data-linenumber="53">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(response).to be_successful</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="54">
-          
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(transaction_data[&quot;data&quot;][&quot;attributes&quot;][&quot;id&quot;]).to eq(transaction.id)</code>
         </li>
@@ -4321,20 +4374,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="61">
-          
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
           
           <code class="ruby">   transaction_data = JSON.parse(response.body)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="62">
-          
+        <li class="covered" data-hits="1" data-linenumber="62">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(response).to be_successful</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="63">
-          
+        <li class="covered" data-hits="1" data-linenumber="63">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(transaction_data[&quot;data&quot;][&quot;attributes&quot;][&quot;id&quot;]).to eq(transaction.id)</code>
         </li>
@@ -4381,26 +4434,26 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="71">
-          
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
           
           <code class="ruby">   transactions = JSON.parse(response.body)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="72">
-          
+        <li class="covered" data-hits="1" data-linenumber="72">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(response).to be_successful</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="73">
-          
+        <li class="covered" data-hits="1" data-linenumber="73">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(transactions[&quot;data&quot;].count).to eq(1)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="74">
-          
+        <li class="covered" data-hits="1" data-linenumber="74">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(transactions[&quot;data&quot;][0][&quot;attributes&quot;][&quot;id&quot;]).to eq(transaction_1.id)</code>
         </li>
@@ -4420,19 +4473,19 @@
         <li class="covered" data-hits="1" data-linenumber="77">
           <span class="hits">1</span>
           
-          <code class="ruby"> it &#39;can find all transactions by name&#39; do</code>
+          <code class="ruby"> xit &#39;can find all transactions by result&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="78">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="78">
           
-          <code class="ruby">   transaction_1, transaction_2 = create_list(:transaction, 2, name: &quot;Bob&quot;)</code>
+          
+          <code class="ruby">   transaction_1, transaction_2 = create_list(:transaction, 2)</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="79">
           
           
-          <code class="ruby">   transaction_3 = create(:transaction, name: &quot;Jim&quot;)</code>
+          <code class="ruby">   transaction_3 = create(:transaction, result: &quot;Failed&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="80">
@@ -4444,7 +4497,7 @@
         <li class="missed" data-hits="0" data-linenumber="81">
           
           
-          <code class="ruby">   get &quot;/api/v1/transactions/find_all?name=#{transaction_1.name}&quot;</code>
+          <code class="ruby">   get &quot;/api/v1/transactions/find_all?result=#{transaction_1.result}&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="82">
@@ -4525,26 +4578,26 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="95">
-          
+        <li class="covered" data-hits="1" data-linenumber="95">
+          <span class="hits">1</span>
           
           <code class="ruby">   transactions = JSON.parse(response.body)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="96">
-          
+        <li class="covered" data-hits="1" data-linenumber="96">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(response).to be_successful</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="97">
-          
+        <li class="covered" data-hits="1" data-linenumber="97">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(transactions[&quot;data&quot;].count).to eq(2)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="98">
-          
+        <li class="covered" data-hits="1" data-linenumber="98">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(transactions[&quot;data&quot;][0][&quot;attributes&quot;][&quot;id&quot;]).to eq(transaction_1.id)</code>
         </li>
@@ -4597,26 +4650,26 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="107">
-          
+        <li class="covered" data-hits="1" data-linenumber="107">
+          <span class="hits">1</span>
           
           <code class="ruby">   transactions = JSON.parse(response.body)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="108">
-          
+        <li class="covered" data-hits="1" data-linenumber="108">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(response).to be_successful</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="109">
-          
+        <li class="covered" data-hits="1" data-linenumber="109">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(transactions[&quot;data&quot;].count).to eq(2)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="110">
-          
+        <li class="covered" data-hits="1" data-linenumber="110">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(transactions[&quot;data&quot;][0][&quot;attributes&quot;][&quot;id&quot;]).to eq(transaction_1.id)</code>
         </li>
@@ -4657,20 +4710,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="117">
-          
+        <li class="covered" data-hits="1" data-linenumber="117">
+          <span class="hits">1</span>
           
           <code class="ruby">   transaction = JSON.parse(response.body)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="118">
-          
+        <li class="covered" data-hits="1" data-linenumber="118">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(response).to be_successful</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="119">
-          
+        <li class="covered" data-hits="1" data-linenumber="119">
+          <span class="hits">1</span>
           
           <code class="ruby">   expect(transaction.count).to eq(1)</code>
         </li>
