@@ -8,6 +8,10 @@ class Api::V1::InvoicesController < ApplicationController
   end
 
   def show
-    render json: Invoice.find(params[:id])
+    if params[:invoice_item_id]
+      render json: InvoiceSerializer.new(Invoice.find_invoice_item(params[:invoice_item_id]))
+    else
+      render json: InvoiceSerializer.new(Invoice.find(params[:id]))
+    end
   end
 end

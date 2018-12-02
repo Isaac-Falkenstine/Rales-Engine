@@ -11,6 +11,10 @@ class Api::V1::ItemsController < ApplicationController
 
 
   def show
-    render json: Item.find(params[:id])
+    if params[:invoice_item_id]
+      render json:ItemSerializer.new(Item.find_invoice_item(params[:invoice_item_id]))
+    else
+      render json: ItemSerializer.new(Item.find(params[:id]))
+    end
   end
 end
