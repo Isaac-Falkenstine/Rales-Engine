@@ -10,7 +10,7 @@ describe "Customers API" do
 
     customers = JSON.parse(response.body)
 
-    expect(customers.count).to eq(3)
+    expect(customers["data"].count).to eq(3)
   end
 
   it "can get one customer by its id" do
@@ -21,7 +21,7 @@ describe "Customers API" do
    customer = JSON.parse(response.body)
 
    expect(response).to be_successful
-   expect(customer["id"]).to eq(id)
+   expect(customer["data"]["id"].to_i).to eq(id)
  end
  it 'can find a customer by id' do
    id = create(:customer).id
@@ -118,4 +118,13 @@ describe "Customers API" do
    expect(response).to be_successful
    expect(customer.count).to eq(1)
  end
+
+ it 'should return merchant with most successful transactions' do
+    customer = create(:customer)
+
+    get "/api/v1/customers/#{customer.id}/favorite_merchant"
+
+    expect(response).to be_successful
+    merchant = JSON.parse(response.body)
+  end
 end

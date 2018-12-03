@@ -118,4 +118,27 @@ describe "Merchants API" do
     expect(response).to be_successful
     expect(merchant.count).to eq(1)
   end
+
+  it 'should return customer with most successful transactions' do
+    merchant = create(:merchant)
+
+    get "/api/v1/merchants/#{merchant.id}/favorite_customer"
+
+    expect(response).to be_successful
+    customer = JSON.parse(response.body)
+  end
+
+  it 'should send top merchants by max revenue' do
+    get '/api/v1/merchants/most_revenue?quantity=2'
+
+    expect(response).to be_successful
+    top_merchants = JSON.parse(response.body)
+  end
+
+  it 'should send top merchants by items sold' do
+    get '/api/v1/merchants/most_items?quantity=2'
+
+    expect(response).to be_successful
+    top_merchants = JSON.parse(response.body)
+  end
 end

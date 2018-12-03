@@ -6,11 +6,29 @@
         1,
         null,
         1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
         null
       ],
       "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/models/application_record.rb": [
         1,
         1,
+        null,
+        1,
+        0,
+        null,
         null
       ],
       "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/spec/models/invoice_item_spec.rb": [
@@ -63,6 +81,12 @@
         null,
         1,
         1,
+        null,
+        1,
+        null,
+        null,
+        0,
+        null,
         null
       ],
       "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/spec/models/item_spec.rb": [
@@ -89,6 +113,21 @@
         1,
         1,
         1,
+        null,
+        1,
+        null,
+        null,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
         null
       ],
       "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/spec/models/merchant_spec.rb": [
@@ -111,6 +150,43 @@
         null,
         1,
         1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
         null
       ],
       "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/spec/models/transaction_spec.rb": [
@@ -132,6 +208,11 @@
         1,
         null,
         1,
+        null,
+        1,
+        null,
+        0,
+        null,
         null
       ],
       "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/spec/requests/api/v1/customers_request_spec.rb": [
@@ -252,6 +333,15 @@
         1,
         null,
         1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
         1,
         1,
         null,
@@ -624,6 +714,15 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/spec/requests/api/v1/merchants_request_spec.rb": [
@@ -744,6 +843,29 @@
         1,
         null,
         1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
         1,
         1,
         null,
@@ -934,10 +1056,20 @@
         null,
         1,
         1,
+        0,
+        null,
+        1,
+        null,
         null,
         null
       ],
       "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/controllers/application_controller.rb": [
+        1,
+        null
+      ],
+      "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/serializers/customer_serializer.rb": [
+        1,
+        1,
         1,
         null
       ],
@@ -958,12 +1090,6 @@
         null,
         null
       ],
-      "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/serializers/customer_serializer.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
       "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/controllers/api/v1/customers/random_controller.rb": [
         1,
         1,
@@ -971,15 +1097,41 @@
         null,
         null
       ],
+      "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/controllers/api/v1/customers/favorite_merchant_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/serializers/merchant_serializer.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/controllers/api/v1/invoice_items_controller.rb": [
         1,
         1,
         1,
+        0,
+        1,
+        0,
+        null,
+        1,
+        null,
+        null,
         null,
         null,
         1,
         1,
         null,
+        null
+      ],
+      "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/serializers/invoice_item_serializer.rb": [
+        1,
+        1,
+        1,
         null
       ],
       "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/controllers/api/v1/invoice_items/search_controller.rb": [
@@ -999,12 +1151,6 @@
         null,
         null
       ],
-      "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/serializers/invoice_item_serializer.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
       "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/controllers/api/v1/invoice_items/random_controller.rb": [
         1,
         1,
@@ -1016,11 +1162,29 @@
         1,
         1,
         1,
+        0,
+        1,
+        0,
+        null,
+        1,
+        null,
         null,
         null,
         1,
         1,
+        0,
+        1,
+        0,
         null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/serializers/invoice_serializer.rb": [
+        1,
+        1,
+        1,
         null
       ],
       "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/controllers/api/v1/invoices/search_controller.rb": [
@@ -1040,12 +1204,6 @@
         null,
         null
       ],
-      "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/serializers/invoice_serializer.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
       "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/controllers/api/v1/invoices/random_controller.rb": [
         1,
         1,
@@ -1057,11 +1215,28 @@
         1,
         1,
         1,
+        0,
+        1,
+        0,
+        null,
+        1,
+        null,
+        null,
         null,
         null,
         1,
         1,
+        0,
         null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/serializers/item_serializer.rb": [
+        1,
+        1,
+        1,
         null
       ],
       "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/controllers/api/v1/items/search_controller.rb": [
@@ -1081,13 +1256,14 @@
         null,
         null
       ],
-      "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/serializers/item_serializer.rb": [
+      "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/controllers/api/v1/items/random_controller.rb": [
         1,
         1,
         1,
+        null,
         null
       ],
-      "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/controllers/api/v1/items/random_controller.rb": [
+      "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/controllers/api/v1/items/items_best_day_controller.rb": [
         1,
         1,
         1,
@@ -1102,13 +1278,13 @@
         null,
         1,
         1,
+        0,
+        1,
+        0,
         null,
-        null
-      ],
-      "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/serializers/merchant_serializer.rb": [
         1,
-        1,
-        1,
+        null,
+        null,
         null
       ],
       "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/controllers/api/v1/merchants/search_controller.rb": [
@@ -1135,15 +1311,48 @@
         null,
         null
       ],
+      "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/controllers/api/v1/merchants/favorites_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/controllers/api/v1/merchants/most_revenue_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/controllers/api/v1/merchants/most_items_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/controllers/api/v1/transactions_controller.rb": [
         1,
         1,
         1,
+        0,
+        1,
+        0,
+        null,
+        1,
+        null,
         null,
         null,
         1,
         1,
         null,
+        null
+      ],
+      "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/serializers/transaction_serializer.rb": [
+        1,
+        1,
+        1,
         null
       ],
       "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/controllers/api/v1/transactions/search_controller.rb": [
@@ -1163,12 +1372,6 @@
         null,
         null
       ],
-      "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/serializers/transaction_serializer.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
       "/Users/isaacfalkenstine/turing/3module/projects/rales_engine_high_level/rales_engine/app/controllers/api/v1/transactions/random_controller.rb": [
         1,
         1,
@@ -1177,6 +1380,6 @@
         null
       ]
     },
-    "timestamp": 1543597011
+    "timestamp": 1543842372
   }
 }
