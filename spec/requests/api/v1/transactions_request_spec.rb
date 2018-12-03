@@ -10,7 +10,7 @@ describe "Transactions API" do
 
     transactions = JSON.parse(response.body)
 
-    expect(transactions.count).to eq(3)
+    expect(transactions["data"].count).to eq(3)
   end
 
   it "can get one transaction by its id" do
@@ -21,7 +21,7 @@ describe "Transactions API" do
    transaction = JSON.parse(response.body)
 
    expect(response).to be_successful
-   expect(transaction["id"]).to eq(id)
+   expect(transaction["data"]["id"].to_i).to eq(id)
  end
  it 'can find a transaction by id' do
    id = create(:transaction).id

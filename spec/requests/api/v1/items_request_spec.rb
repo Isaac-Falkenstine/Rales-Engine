@@ -10,7 +10,7 @@ describe "Items API" do
 
     items = JSON.parse(response.body)
 
-    expect(items.count).to eq(3)
+    expect(items["data"].count).to eq(3)
   end
 
   it "can get one item by its id" do
@@ -21,7 +21,7 @@ describe "Items API" do
    item = JSON.parse(response.body)
 
    expect(response).to be_successful
-   expect(item["id"]).to eq(id)
+   expect(item["data"]["id"].to_i).to eq(id)
  end
  it 'can find a item by id' do
    id = create(:item).id
