@@ -7,4 +7,10 @@ class Invoice < ApplicationRecord
 
   belongs_to :customer
   belongs_to :merchant
+
+  def self.find_transaction(tran_id)
+    joins(:transactions)
+    .where("transactions.id = #{tran_id}")
+    .first
+  end
 end
