@@ -118,4 +118,13 @@ describe "Customers API" do
    expect(response).to be_successful
    expect(customer.count).to eq(1)
  end
+
+ it 'should return merchant with most successful transactions' do
+    customer = create(:customer)
+
+    get "/api/v1/customers/#{customer.id}/favorite_merchant"
+
+    expect(response).to be_successful
+    merchant = JSON.parse(response.body)
+  end
 end
